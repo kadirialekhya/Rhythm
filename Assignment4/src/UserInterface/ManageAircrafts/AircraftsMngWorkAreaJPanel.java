@@ -90,11 +90,11 @@ public class AircraftsMngWorkAreaJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Name", "Headquarters", "Fleet Size"
+                "Name", "Headquarters"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -105,7 +105,6 @@ public class AircraftsMngWorkAreaJPanel extends javax.swing.JPanel {
         if (tblAirliner.getColumnModel().getColumnCount() > 0) {
             tblAirliner.getColumnModel().getColumn(0).setResizable(false);
             tblAirliner.getColumnModel().getColumn(1).setResizable(false);
-            tblAirliner.getColumnModel().getColumn(2).setResizable(false);
         }
 
         btnCreateNewAirliner.setBackground(new java.awt.Color(245, 245, 246));
@@ -269,7 +268,7 @@ public class AircraftsMngWorkAreaJPanel extends javax.swing.JPanel {
            
         int selectedRow = tblAirliner.getSelectedRow();
         if(selectedRow<0) {
-             JOptionPane.showMessageDialog(null, "Please select a row from table first to view flight details","Warning",JOptionPane.WARNING_MESSAGE);
+             JOptionPane.showMessageDialog(null, "Please select a row from table first to add flight details","Warning",JOptionPane.WARNING_MESSAGE);
          }
         else{
         Aircraft aircraft = (Aircraft)tblAirliner.getValueAt(selectedRow,0);
