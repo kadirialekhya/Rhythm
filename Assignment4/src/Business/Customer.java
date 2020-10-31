@@ -19,7 +19,7 @@ public class Customer {
     String customerEmail;
     private String seatNumber;
     private String flightNumber;
-    private ArrayList<AirlinerDirectory> airlinerDirectory;
+    private ArrayList<AircraftDirectory> aircraftDirectory;
 
      public Customer(String customerName,long customerContact, String customerEmail,String flightNumber, String seatNumber){
        // airlinerDirectory = new ArrayList<>(); 
@@ -30,12 +30,12 @@ public class Customer {
         this.seatNumber = seatNumber;
         
     }
-    public ArrayList<AirlinerDirectory> getAirlinerdirectory() {
-        return airlinerDirectory;
+    public ArrayList<AircraftDirectory> getAircraftdirectory() {
+        return aircraftDirectory;
     }
 
-    public void setAirlinerdirectory(ArrayList<AirlinerDirectory> airlinerdirectory) {
-        this.airlinerDirectory = airlinerdirectory;
+    public void setAircraftdirectory(ArrayList<AircraftDirectory> aircraftDirectory) {
+        this.aircraftDirectory = aircraftDirectory;
     }
 
     public String getFlightNumber() {

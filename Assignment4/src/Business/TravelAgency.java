@@ -10,21 +10,21 @@ package Business;
  * @author alekh
  */
 public class TravelAgency {
-    private AirlinerDirectory airlinerDirectory;
+    private AircraftDirectory aircraftDirectory;
     private CustomerDirectory customerDirectory;
     
   public TravelAgency()
   {
-      this.airlinerDirectory = new AirlinerDirectory();
+      this.aircraftDirectory = new AircraftDirectory();
       this.customerDirectory = new CustomerDirectory();
   }
 
-    public AirlinerDirectory getAirlinerDirectory() {
-        return airlinerDirectory;
+    public AircraftDirectory getAirlinerDirectory() {
+        return aircraftDirectory;
     }
 
-    public void setAirlinerDirectory(AirlinerDirectory airlinerDirectory) {
-        this.airlinerDirectory = airlinerDirectory;
+    public void setAircraftDirectory(AircraftDirectory airlinerDirectory) {
+        this.aircraftDirectory = aircraftDirectory;
     }
 
     public CustomerDirectory getCustomerDirectory() {
