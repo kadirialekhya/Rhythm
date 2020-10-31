@@ -5,7 +5,7 @@
  */
 package UserInterface;
 import Business.TravelAgency;
-import UserInterface.ManageAirliners.AirlinersMngWorkAreaJPanel;
+import UserInterface.ManageAircrafts.AircraftsMngWorkAreaJPanel;
 import UserInterface.ManageCustomers.CustomersMngWorkAreaJPanel;
 import UserInterface.ManageTravelAgency.TravelAgencyMngWorkAreaJPanel;
 import java.awt.CardLayout;
@@ -125,7 +125,7 @@ public class TravelAgencyMainJFrame extends javax.swing.JFrame {
 
     private void btnAirlinersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAirlinersActionPerformed
         // TODO add your handling code here:
-        AirlinersMngWorkAreaJPanel panel = new AirlinersMngWorkAreaJPanel(cardSequenceJPanel,travelAgency);
+        AircraftsMngWorkAreaJPanel panel = new AircraftsMngWorkAreaJPanel(cardSequenceJPanel,travelAgency);
         cardSequenceJPanel.add("AirlinersMngWorkAreaJPanel", panel);
         CardLayout layout = (CardLayout) cardSequenceJPanel.getLayout();
         layout.next(cardSequenceJPanel);
